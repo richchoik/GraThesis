@@ -1,0 +1,37 @@
+@{
+    ViewBag.Title = "Login";
+}
+<h2>Login</h2>
+<div>
+    <input id="username" placeholder="Username" />
+    <input id="password" type="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <p><a href="@Url.Action("Signup")">Don't have an account? Sign up</a></p>
+    <div id="message"></div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    function login() {
+        const data = {
+            Username: $('#username').val(),
+            Password: $('#password').val()
+        };
+
+        $.ajax({
+            url: '@Url.Action("Login")',    
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(data), // Send direct JSON object
+            success: function(response) {
+                $('#message').text(response.message);
+                if (response.success) {
+                    window.location.href = '@Url.Action("Index", "Home")';
+                }
+            },
+            error: function(xhr, status, error) {
+                $('#message').text('Error: ' + error);
+            }
+        });
+    }
+</script>

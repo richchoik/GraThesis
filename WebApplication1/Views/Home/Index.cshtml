@@ -1,0 +1,5 @@
+@{
+    ViewBag.Title = "Home";
+}
+<h2>Welcome, @Session["Username"]</h2>
+<a href="@Url.Action("Logout", "Account")">Logout</a>
