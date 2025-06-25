@@ -8,66 +8,81 @@ namespace WebApplication1.Utilities
 {
     public static class Sandbox
     {
-        public static object ProcessPayload(string jsonPayload)
-    {
-        try
+        public static string ProcessPayload(string jsonPayload)
         {
-            JObject jsonObject = JObject.Parse(jsonPayload);
-            bool containsBase64 = false;
-            bool containsType = false;
-
-            foreach (var property in jsonObject.Properties())
+            try
             {
-                if (property.Value.Type == JTokenType.String)
-                {
-                    string value = property.Value.ToString();
+                System.Diagnostics.Debug.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss}: Sandbox received payload: {jsonPayload}");
+                JObject jsonObject = JObject.Parse(jsonPayload);
 
-                    //Chỉ giải mã nếu là base64 hợp lệ và có độ dài tối thiểu
-                    if (IsBase64String(value) && value.Length >= 4)
-                    {
-                        containsBase64 = true;
-                        try
-                        {
-                            byte[] bytes = Convert.FromBase64String(value);
-                            string decoded = Encoding.UTF8.GetString(bytes);
-                            property.Value = decoded;
-                            System.Diagnostics.Debug.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss}: Decoded base64: {decoded}");
-                        }
-                        catch (Exception ex)
-                        {
-                            System.Diagnostics.Debug.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss}: Không thể giải mã base64: {value}, Lỗi: {ex.Message}");
-                        }
-                    }
-
-                    if (value.Contains("$type"))
-                    {
-                        containsType = true;
-                    }
-                }
-            }
-
-            if (!containsBase64 && !containsType)
-            {
-                return jsonPayload; // Giữ nguyên nếu không có base64 hoặc $type
-            }
-
-            if (containsType)
-            {
+                // Luôn deserialize với TypeNameHandling.None để ngăn RCE
                 var settings = new JsonSerializerSettings
                 {
                     TypeNameHandling = TypeNameHandling.None
                 };
-                return JsonConvert.DeserializeObject<object>(jsonObject.ToString(), settings);
-            }
+                object deserializedObject = JsonConvert.DeserializeObject<object>(jsonObject.ToString(), settings);
+                System.Diagnostics.Debug.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss}: Deserialized object with TypeNameHandling.None: {deserializedObject}");
 
-            return jsonObject.ToString();
+                // Chuyển đổi thành JToken để dễ xử lý và loại bỏ $type
+                JToken safeToken = JToken.FromObject(deserializedObject);
+
+                // Loại bỏ tất cả thuộc tính $type trong JToken
+                RemoveTypeProperties(safeToken);
+
+                // Xử lý base64 nếu có
+                if (safeToken is JObject safeObject)
+                {
+                    foreach (var property in safeObject.Properties())
+                    {
+                        if (property.Value.Type == JTokenType.String)
+                        {
+                            string value = property.Value.ToString();
+                            if (IsBase64String(value) && value.Length >= 20)
+                            {
+                                try
+                                {
+                                    byte[] bytes = Convert.FromBase64String(value);
+                                    string decoded = Encoding.UTF8.GetString(bytes);
+                                    property.Value = decoded;
+                                    System.Diagnostics.Debug.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss}: Successfully decoded base64 for {property.Name}: {decoded}");
+                                }
+                                catch (Exception ex)
+                                {
+                                    System.Diagnostics.Debug.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss}: Failed to decode base64 for {property.Name}: {ex.Message}");
+                                }
+                            }
+                        }
+                    }
+                    return safeObject.ToString(); // Trả về chuỗi JSON đã xử lý an toàn
+                }
+
+                return safeToken.ToString(); // Trả về chuỗi JSON an toàn nếu không phải JObject
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss}: Sandbox error: {ex.Message}");
+                return null;
+            }
         }
-        catch (Exception ex)
+
+        private static void RemoveTypeProperties(JToken token)
         {
-            System.Diagnostics.Debug.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss}: Lỗi trong sandbox: {ex.Message}");
-            return null;
+            if (token is JObject obj)
+            {
+                obj.Remove("$type"); // Xóa $type nếu có
+                foreach (var property in obj.Properties())
+                {
+                    RemoveTypeProperties(property.Value); // Đệ quy vào các phần tử con
+                }
+            }
+            else if (token is JArray arr)
+            {
+                foreach (var item in arr)
+                {
+                    RemoveTypeProperties(item); // Đệ quy vào mảng
+                }
+            }
         }
-    }
 
         private static bool IsBase64String(string value)
         {

